@@ -12,10 +12,17 @@ public partial class Form1 : Form
     private VideoCapture capture;
     private Mat frame;
     private static readonly HttpClient client = new HttpClient();
+    private PictureBox pictureBox;
     
     public Form1()
     {
-        InitializeComponent();
+        pictureBox = new PictureBox
+        {
+            Dock = DockStyle.Fill,
+            SizeMode = PictureBoxSizeMode.StretchImage
+        };
+        Controls.Add(pictureBox);
+        capture = new VideoCapture(0); // Capture vidéo à partir de la webcam
         capture = new VideoCapture(0); // Capture vidéo à partir de la webcam
         frame = new Mat();
     }
@@ -23,7 +30,7 @@ public partial class Form1 : Form
     // Initialisation au chargement du formulaire
     private void Form1_Load(object sender, EventArgs e)
     {
-        Timer timer = new Timer();
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         timer.Interval = 30; // Mise à jour toutes les 30ms (30 FPS)
         timer.Tick += Timer_Tick;
         timer.Start();
