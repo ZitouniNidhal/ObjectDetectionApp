@@ -53,6 +53,10 @@
             "Emgu.CV": {
               "target": "Package",
               "version": "[4.9.0.5494, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
