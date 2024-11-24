@@ -3,6 +3,7 @@ using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace ObjectDetectionApp
 {
@@ -39,6 +40,31 @@ namespace ObjectDetectionApp
             Mat grayImage = new Mat();
             CvInvoke.CvtColor(image, grayImage, ColorConversion.Bgr2Gray);
             return grayImage;
+        }
+
+        // Méthode pour redimensionner une image
+        public Mat ResizeImage(Mat image, int width, int height)
+        {
+            Mat resizedImage = new Mat();
+            CvInvoke.Resize(image, resizedImage, new Size(width, height));
+            return resizedImage;
+        }
+
+        // Méthode pour détecter les bords avec l'algorithme de Canny
+        public Mat DetectEdges(Mat image, double threshold1, double threshold2)
+        {
+            Mat edges = new Mat();
+            CvInvoke.Canny(image, edges, threshold1, threshold2);
+            return edges;
+        }
+
+        // Méthode pour appliquer l'égalisation d'histogramme
+        public Mat EqualizeHistogram(Mat image)
+        {
+            Mat grayImage = ConvertToGray(image);
+            Mat equalizedImage = new Mat();
+            CvInvoke.EqualizeHist(grayImage, equalizedImage);
+            return equalizedImage;
         }
     }
 }
