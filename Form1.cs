@@ -1,4 +1,4 @@
-using Emgu.CV;
+9using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System;
@@ -104,3 +104,4 @@ public Bitmap MatToBitmap(Mat mat)
         }
     }
 }
+            CvInvoke.DestroyAllWindows(); // Fermer toutes les fenêtres OpenCV
