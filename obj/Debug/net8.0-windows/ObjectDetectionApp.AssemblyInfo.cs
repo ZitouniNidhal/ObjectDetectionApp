@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObjectDetectionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e6839d4424e46726e57c48f00e9bc90af3a987c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42b2e99fb81eced1bbbd75286b812b14c2c5d6c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObjectDetectionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObjectDetectionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
