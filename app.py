@@ -30,4 +30,3 @@ def predict():
     predictions = results.pandas().xywh[0].to_dict(orient="records")
     
     return jsonify(predictions)
-
