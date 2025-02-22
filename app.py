@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Charger un modèle YOLO pré-entraîné
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # Modèle YOLO pré-entraîné
+model = torch.hub.load('nomde modele ici ', 'yolov5s')  # Modèle YOLO pré-entraîné
 
 @app.route('/predict', methods=['POST'])
 def predict():
