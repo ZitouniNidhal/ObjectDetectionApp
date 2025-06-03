@@ -104,4 +104,4 @@ public Bitmap MatToBitmap(Mat mat)
         }
     }
 }
-            CvInvoke.DestroyAllWindows(); // Fermer toutes les fenêtres OpenCV
+    

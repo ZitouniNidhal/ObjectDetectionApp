@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ol/IWwIByacIjSwuX6/kIfPBW4JmyUg3R9+JrZwaiP0vHXxGQ21PX87IJ8/rLNthbOlFBsozfqB8qFyc0cGng==",
+  "dgSpecHash": "gMJk2EVxL+B0DWzTynKWIqBkZKdsEXf54UvKWFUhmN/NZ03ym6YlEgxbpaWeM97YqBMQlgjGSnlEwnPxYgTnoQ==",
   "success": true,
-  "projectFilePath": "C:\\Z-Projets\\Machine Learning\\ObjectDetectionApp\\ObjectDetectionApp.csproj",
+  "projectFilePath": "C:\\Z-Projets\\Deep Learning\\Assistant\\ObjectDetectionApp\\ObjectDetectionApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nidha\\.nuget\\packages\\emgu.cv\\4.9.0.5494\\emgu.cv.4.9.0.5494.nupkg.sha512",
     "C:\\Users\\nidha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
