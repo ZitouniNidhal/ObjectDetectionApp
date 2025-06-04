@@ -49,7 +49,7 @@ namespace ObjectDetectionApp
             timer.Tick += Timer_Tick;
             timer.Start();
         }
-public Bitmap MatToBitmap(Mat mat)
+public static Bitmap MatToBitmap(Mat mat)
 {
     if (mat.IsEmpty)
         return null;
