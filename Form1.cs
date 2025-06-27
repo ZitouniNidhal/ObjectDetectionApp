@@ -45,7 +45,7 @@ namespace ObjectDetectionApp
         private void Form1_Load(object sender, EventArgs e)
         {
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interv
+            timer.Interval = 30; // Intervalle en millisecondes (par exemple, 30 ms pour ~33 FPS)
             timer.Tick += Timer_Tick;
             timer.Start();
         }
