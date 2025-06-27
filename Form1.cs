@@ -45,7 +45,7 @@ namespace ObjectDetectionApp
         private void Form1_Load(object sender, EventArgs e)
         {
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 30; // Mise à jour toutes les 30ms (environ 30 FPS)
+            timer.Interv
             timer.Tick += Timer_Tick;
             timer.Start();
         }
