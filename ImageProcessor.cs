@@ -1,4 +1,4 @@
-using Emgu.CV;
+9using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System.Drawing;
@@ -65,6 +65,13 @@ namespace ObjectDetectionApp
             Mat equalizedImage = new Mat();
             CvInvoke.EqualizeHist(grayImage, equalizedImage);
             return equalizedImage;
+// Méthode pour appliquer l'égalisation d'histogramme
+        public Mat EqualizeHistogram(Mat image)
+        {
+            Mat grayImage = ConvertToGray(image);
+            Mat equalizedImage = new Mat();
+            CvInvoke.EqualizeHist(grayImage, equalizedImage);
+           
         }
     }
 }
